@@ -30,9 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
+
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
@@ -44,10 +42,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void tellJoke(View view) {
-        /*JokeClass jokeClass = new JokeClass();
-        Intent intent = new Intent(MainActivity.this, JokeActivity.class);
-        intent.putExtra("joke",jokeClass.getJoke());
-        startActivity(intent);*/
+
         EndpointAsyncTask endpointAsyncTask = new EndpointAsyncTask();
         endpointAsyncTask.execute(this);
     }
