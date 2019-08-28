@@ -13,9 +13,7 @@ buildscript {
 android {
     compileSdkVersion 26
     buildToolsVersion "26.0.3"
-    lintOptions {
-        abortOnError false
-    }
+
     defaultConfig {
         applicationId "com.udacity.gradle.builditbigger"
         minSdkVersion 16

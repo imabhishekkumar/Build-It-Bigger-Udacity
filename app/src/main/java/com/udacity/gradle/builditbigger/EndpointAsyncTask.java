@@ -36,7 +36,6 @@ public class EndpointAsyncTask extends AsyncTask<Context,Void,String> {
             myApiService = builder.build();
         }
 
-        context = params[0];
 
         try {
             return myApiService.getJokes().execute().getData();
